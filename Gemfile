@@ -54,6 +54,9 @@ group :development, :test do
 
   # Inclusão do Rspec no Gemfile
   gem "rspec-rails", "~> 4.1.0"
+
+  #Inclusão da gem FFaker
+  gem "ffaker"
   
 end
 
