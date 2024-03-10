@@ -19,5 +19,5 @@ RSpec.describe User, type: :model do
    user = User.create(nickname: nickname, kind: kind, level: level)
    expect(user.title).to eq("#{kind} #{nickname} ##{level}")
  end
-
+ 
 end
