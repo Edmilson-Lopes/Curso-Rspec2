@@ -57,6 +57,9 @@ group :development, :test do
 
   #Inclusão da gem FFaker
   gem "ffaker"
+
+  #Inclusão da gem FactoryBot
+  gem "factory_bot_rails"
   
 end
 
