@@ -5,4 +5,4 @@ FactoryBot.define do
         level {FFaker::Random.rand(1..99)}
         kind {%i[knight wizard].sample}
     end
-end
+end 
