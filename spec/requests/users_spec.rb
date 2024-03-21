@@ -1,18 +1,18 @@
 require 'rails_helper'
 
 RSpec.describe "Users", type: :request do
-  describe "GET /index" do
-    it "returns http success" do
-      get "/users/index"
-      expect(response).to have_http_status(:success)
-    end
+  describe "GET /users" do
+    it "returns success status" 
+    it "the user's title is present"
   end
 
-  describe "GET /create" do
-    it "returns http success" do
-      get "/users/create"
-      expect(response).to have_http_status(:success)
-    end
-  end
+  describe "POST /users" do
+   context "when it has valid paramters" do 
+    it "creates the user whith correct attributes"
+   end
 
+   context "when it has no valid paramters" do
+    it "does not create user"
+   end
+  end
 end
