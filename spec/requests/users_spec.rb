@@ -20,10 +20,19 @@ RSpec.describe "Users", type: :request do
 
   describe "POST /users" do
    context "when it has valid paramters" do 
-    it "creates the user whith correct attributes"
-   end
+    it "creates the user whith correct attributes" do
+      user_attributes = FactoryBot.attributes_for(:user)
+      post users_path, params: { user: user_attributes}
+      expect(User.last).to have_attributes(user_attributes)
+    end
+  end
 
    context "when it has no valid paramters" do
-    it "does not create user"
+    it "does not create user" do 
+      expect{
+        post users_path, params: { user: {kind: '', name: '', level: ''}}
+      }.to_not change(User, :count)
    end
   end
+
+end
