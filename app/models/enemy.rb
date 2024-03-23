@@ -1,2 +1,2 @@
 class Enemy < ApplicationRecord
-end
+end 
