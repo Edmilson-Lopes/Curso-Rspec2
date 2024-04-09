@@ -17,7 +17,6 @@ RSpec.describe "Users", type: :request do
     end
 
   end
-  
 
   describe "POST /users" do
    context "when it has valid paramters" do 
